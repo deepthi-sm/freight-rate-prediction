@@ -1,0 +1,87 @@
+{
+  "data_summary": {
+    "train_rows": 48000,
+    "validation_rows": 12000,
+    "train_dates": [
+      "2025-01-01",
+      "2025-10-31"
+    ],
+    "validation_dates": [
+      "2025-11-01",
+      "2025-12-31"
+    ],
+    "label_errors_flagged": 677,
+    "label_errors_pct": 1.41,
+    "label_errors_high": 340,
+    "label_errors_low": 337,
+    "negative_weight_train": 292,
+    "negative_weight_validation": 145,
+    "missing_weight_train": 300,
+    "missing_weight_validation": 165,
+    "missing_market_index_train": 374,
+    "missing_market_index_validation": 249,
+    "duplicate_load_ids": 0,
+    "cities_only_in_validation": [
+      "Allentown",
+      "Charlotte",
+      "Chicago",
+      "Jackson",
+      "Knoxville",
+      "Laredo",
+      "Norfolk",
+      "San Diego"
+    ],
+    "validation_rows_touching_unseen_city": 1447
+  },
+  "final_model": {
+    "tree_features": [
+      "log_distance",
+      "equipment",
+      "weight",
+      "quote_signal",
+      "pickup_lat",
+      "pickup_lon",
+      "delivery_lat",
+      "delivery_lon"
+    ],
+    "linear_features": [
+      "log_daily_market_index",
+      "days_since_start",
+      "daily_quote_signal"
+    ],
+    "linear_coefficients": {
+      "log_daily_market_index": 0.120118,
+      "days_since_start": 0.000161,
+      "daily_quote_signal": 0.040634,
+      "intercept": -0.116299
+    },
+    "trained_on_rows": 47323,
+    "in_sample": {
+      "mape_pct": 1.3147011411456295,
+      "mae": 30.550391664774725,
+      "rmse": 45.852445616579146,
+      "n": 47323
+    }
+  },
+  "rolling_origin_cv": {
+    "mean_mape_pct": 2.0618713022330994,
+    "mean_mae": 47.736023509876595,
+    "mean_rmse": 74.31295271420191,
+    "mean_mape_pct_incl_label_errors": 4.328256234315257
+  },
+  "city_holdout": {
+    "mean_mape_pct": 1.5967254178323873,
+    "mean_mape_pct_without_coords": 1.9561430892795686
+  },
+  "validation_predictions": {
+    "mean": 2377.6483383333334,
+    "median": 2046.7649999999999,
+    "min": 207.08,
+    "max": 6872.89
+  },
+  "december": {
+    "min": 813.01,
+    "max": 838.48,
+    "mean": 825.7103225806452
+  }
+}

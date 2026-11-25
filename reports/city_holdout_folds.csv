@@ -1,0 +1,4 @@
+fold,n_test,mape_pct,mae,rmse,mape_pct_incl_label_errors,mae_incl_label_errors,mape_pct_without_coords
+"repeat 1: Albuquerque, Amarillo, Austin, Dallas, Detroit, Kansas City, Lubbock, Providence",8831,1.587549688266395,37.98619492883808,55.67607036894594,3.7413509147917474,84.31368379884331,2.04844838889787
+"repeat 2: Dayton, Lexington, Little Rock, Lubbock, Montgomery, Nashville, Richmond, St. Louis",12034,1.6438903442104382,30.994648567273863,45.90384073267682,3.8044610091949163,77.43029676111772,1.9524369082926782
+"repeat 3: Albuquerque, Bakersfield, Buffalo, El Paso, Little Rock, Providence, Richmond, Tulsa",11000,1.558736221020328,41.13178371761921,61.378419253276405,3.943493608219733,93.4039879224665,1.8675439706481576
